@@ -6,11 +6,3 @@ go:
 env:
 - CGO_ENABLED=0
 script:  go build -a -installsuffix main.go
-
-deploy:
-  provider: releases
-  api_key: 5948996665d9fb55957345b9f2565d0e21e5dd28
-  file: "s3-backup-service"
-  skip_cleanup: true
-  on:
-    tags: true
