@@ -97,6 +97,7 @@ func syncfiles(){
     }
 }
 
+ 
 func slackpush(){
   url := os.Getenv("SLACK_TOKEN")
     var jsonStr = []byte(`{"text":"Backup to S3 finished!"}`)
