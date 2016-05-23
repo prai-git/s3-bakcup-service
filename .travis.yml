@@ -2,6 +2,7 @@ language: go
 
 go:
   - 1.6
+
 env:
 - CGO_ENABLED=0
 script:  go build -a -installsuffix main.go
