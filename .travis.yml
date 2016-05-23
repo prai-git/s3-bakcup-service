@@ -1,0 +1,5 @@
+language: go
+
+go:
+  - 1.6
+script: CGO_ENABLED=0 go build -a -installsuffix main.go 
